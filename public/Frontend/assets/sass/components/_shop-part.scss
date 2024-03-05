@@ -1,0 +1,266 @@
+@import "../Variable/fontfamily";
+@import "../mixinit/fontStyle";
+
+#shop-main {
+    margin-top: 50px;
+
+    .category-part {
+        border-bottom: 1px solid #f1f1f1;
+        padding-bottom: 10px;
+
+        .category-p-h {
+            h5 {
+                @include fontstyle($popins, 16px, 600, #1B5A7D);
+            }
+
+            p {
+                @include fontstyle($popins, 15px, 400, #595959);
+            }
+        }
+
+        form {
+            .form-group {
+                line-height: 60px;
+
+                input {
+                    width: 20px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    margin-right: 10px;
+                }
+
+                label {
+                    @include fontstyle($popins, 16px, 400, #222222);
+                    text-transform: capitalize;
+                }
+
+                .lb {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    .filture-part {
+        border-bottom: 1px solid #f1f1f1;
+        padding-bottom: 10px;
+        margin-top: 20px;
+
+        .filture-p-h {
+
+            h5 {
+                @include fontstyle($popins, 16px, 600, #1B5A7D);
+            }
+
+            ul {
+                margin-top: 10px;
+
+                li {
+                    @include fontstyle($popins, 15px, 400, #222222);
+                }
+            }
+        }
+
+        form {
+            .form-group {
+                line-height: 60px;
+
+                input {
+                    width: 20px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    margin-right: 10px;
+                }
+
+                label {
+                    @include fontstyle($popins, 16px, 400, #222222);
+                    text-transform: capitalize;
+                }
+
+                span {
+                    width: 30px;
+                    height: 10px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+
+                .lb {
+                    margin-left: auto;
+                }
+
+
+            }
+
+            .stock-blur {
+                opacity: 0.2;
+            }
+        }
+
+    }
+
+    .klij {
+        width: 75% !important;
+        .ul-li {
+            width: 33% !important;
+        }
+    }
+
+    .shop-product {
+        width: 100%;
+
+        .card {
+            margin-bottom: 20px;
+            margin-right: 30px;
+            position: relative;
+            border: 1px solid #B6B6B6;
+            background-color: transparent;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+            .img-part {
+                padding: 30px;
+            }
+
+            .icon {
+                position: absolute;
+                top: 42px;
+                right: 25px;
+                font-size: 10px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                background-color: #B3D4E5;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                color: #000;
+            }
+
+            .card-text {
+                padding: 0px 15px;
+
+                a {
+                    @include fontstyle($popins, 18px, 500, #003F62);
+                    text-transform: capitalize;
+                }
+
+                p {
+                    @include fontstyle($popins, 17px, 600, #4A4A4A);
+                    margin-top: 10px;
+                }
+
+                ul {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+
+                    li {
+                        margin-right: 5px;
+                        @include fontstyle($popins, 14px, 400, #ACACAC);
+                    }
+                }
+            }
+
+            .hd {
+                display: none !important;
+
+                .hidden-text {
+                    padding: 0px 20px;
+                    margin-bottom: 20px;
+                    width: 100%;
+
+                    .h-t1 {
+                        width: 70%;
+                        padding: 10px;
+                        background-color: #87BCD9;
+                        margin-right: 20px;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+
+                        a {
+                            @include fontstyle($popins, 16px, 600, #272727);
+
+                            p {
+                                width: 40px;
+                                height: 40px;
+                                text-align: center;
+                                line-height: 40px;
+                                margin-left: 30px;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;
+                                background-color: #EDA415;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .h-t2 {
+                        width: 20%;
+                        background-color: #87BCD9;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                        text-align: center;
+
+                        a {
+                            font-size: 30px;
+                            color: #292D32;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .card-text {
+                    display: none !important;
+                }
+
+                .hd {
+                    display: block !important;
+                }
+            }
+        }
+
+        ul {
+            .ul-li {
+                width: 25%;
+            }
+        }
+    }
+
+    .jkg {
+        width: 0px;
+        display: none;
+    }
+
+    .jkgxc {
+        width: 250px !important;
+        display: block !important;
+    }
+
+    // .ght {
+    //   display: none !important;
+    // }
+    // .btn-close{
+    //     display: none !important;
+    // }
+}

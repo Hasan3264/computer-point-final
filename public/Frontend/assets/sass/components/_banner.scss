@@ -1,0 +1,131 @@
+@import "../Variable/fontfamily";
+@import "../mixinit/fontStyle";
+
+#banner {
+    padding: 30px 0;
+    .banner-text {
+        width: 48%;
+        margin-left: 150px;
+
+        h1 {
+            margin-top: 20px;
+            @include fontstyle($popins, 43px, 700, #1B5A7D);
+        }
+
+        ul {
+            margin-top: 38px;
+
+            li {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .img-part {
+        width: 26%;
+        position: relative;
+
+        .prize-tag {
+            position: absolute;
+            left: 242px;
+            bottom: 24px;
+            height: 115px;
+            width: 115px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background-color: #EDA415;
+            line-height: 150px;
+            text-align: center;
+            padding: 30px;
+
+            h5 {
+                @include fontstyle($popins, 21px, 600, #fff);
+            }
+        }
+    }
+}
+
+#quicksell {
+    margin-top: 50px;
+
+    .sells {
+        .items {
+            width: 400px;
+            border: 1px solid #A5A5A5;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            margin-left: 30px;
+            padding: 15px 30px;
+
+            .imgpart {
+                width: 30%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .text-part {
+                width: 60%;
+
+                h5 {
+                    @include fontstyle($popins, 23px, 600, #1B5A7D);
+                }
+
+                p {
+                    margin-top: 15px;
+                    @include fontstyle($popins, 18px, 400, #265F7F);
+                }
+            }
+        }
+
+
+        position: relative;
+
+        .pre-arrow {
+            position: absolute;
+            right: -15px;
+            bottom: 34px;
+            color: #313131;
+            z-index: 999;
+            background-color: #EAEAEA;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            text-align: center;
+        }
+
+        .net-arrow {
+            position: absolute;
+            left: 15px;
+            bottom: 31px;
+             color: #313131;
+            z-index: 999;
+            background-color: #EAEAEA;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            text-align: center;
+        }
+
+
+
+    }
+
+}

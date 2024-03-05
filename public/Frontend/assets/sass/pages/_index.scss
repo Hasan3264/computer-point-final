@@ -1,0 +1,26 @@
+
+/* header  part start */
+    @import "../components/header-top";
+/* header  part end */
+/* banner  part start */
+      @import "../components/banner";
+/* banner  part end */
+/* mixin   part start */
+    @import "../components/mixinit";
+/* mixin   part end */
+/*     news part start */
+  @import"../components/news";
+/*   news  part end */
+/* chairman  part start */
+@import"../components/product-show";
+/*chairman  part end */
+/*   clint review  part start */
+@import"../components/clints-review";
+/*   clint review part end */
+/*   lattest part start */
+   @import "../components/latest";
+/*  lattest part end */
+
+/*  footer  part start */
+@import "../components/footer";
+/*  footer part end */

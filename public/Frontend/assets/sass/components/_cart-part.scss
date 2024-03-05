@@ -1,0 +1,173 @@
+@import "../Variable/fontfamily";
+@import "../mixinit/fontStyle";
+
+#card {
+    .table-part{
+           overflow-x: scroll;
+        table {
+            margin-top: 50px;
+             width: 850px;
+            thead {
+                background-color: #E2F4FF;
+    
+                tr {
+                    th {
+                        @include fontstyle($popins, 18px, 400, #232323);
+                    }
+    
+                }
+            }
+    
+            tbody {
+                tr {
+    
+                    td {
+                        height: 120px;
+    
+                        .img-part {
+                            width: 150px;
+                        }
+    
+                        .text-part {
+                            padding: 5px 0px;
+    
+                            h5 {
+                                @include fontstyle($popins, 20px, 500, #1B5A7D);
+                            }
+    
+                            p {
+                                @include fontstyle($popins, 16px, 400, #2F2F2F);
+                                margin-top: 5px;
+                            }
+                        }
+    
+                        h6 {
+                            padding: 35px 0px;
+                            @include fontstyle($popins, 18px, 400, #2F2F2F);
+                            margin: auto 0;
+                        }
+    
+                        .total {
+                            padding: 35px 0px;
+                            @include fontstyle($popins, 18px, 400, #2F2F2F);
+                        }
+    
+                        .quantity_input {
+                            padding: 35px 0px;
+    
+                            button {
+                                width: 30px;
+                                height: 30px;
+                                color: #b8c6d0;
+                                line-height: 28px;
+                                border-radius: 3px;
+                                border: 1px solid #e3e6e9;
+                                background: transparent;
+                                -webkit-border-radius: 3px;
+                                -moz-border-radius: 3px;
+                                -ms-border-radius: 3px;
+                                -o-border-radius: 3px;
+                            }
+    
+                            input {
+                                border-radius: 3px;
+                                border: 1px solid #e3e6e9;
+                                background: transparent;
+                                width: 70px;
+                                height: 30px;
+                                margin: 0 10px;
+                                padding: 0 10px;
+                                font-weight: 500;
+                                text-align: center;
+                                color: #051d43;
+                                -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .imgpart {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            a {
+                margin-top: 10px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .side-cart {
+        margin-top: 50px;
+        border: 1px solid #acacac;
+
+        .side-cart-main {
+            padding: 40px;
+
+            .Subtotal {
+                margin-bottom: 20px;
+
+                h6 {
+                    @include fontstyle($popins, 18px, 400, #232323);
+                }
+            }
+
+            .first-form {
+                margin-bottom: 20px;
+
+                form {
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        line-height: 40px;
+                        border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                        border: 1px solid #acacac;
+                    }
+
+                    button {
+                        position: absolute;
+                        right: 10px;
+                        top: 6px;
+                        background-color: transparent;
+                        border: none;
+                    }
+                }
+
+            }
+
+            .btn-group {
+                margin-bottom: 30px;
+                width: 100%;
+                border: 1px solid #acacac;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+
+                .btn-secondary {
+                    border: none;
+                    background: transparent;
+                    @include fontstyle($popins, 18px, 500, #232323);
+                }
+                .dropdown-menu{
+                    text-align: center;
+                     @include fontstyle($popins, 18px, 400, #232323);
+                }
+            }
+            .total-amount{
+                p{
+                    @include fontstyle($popins, 18px, 400, #232323); 
+                }
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

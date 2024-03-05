@@ -1,0 +1,96 @@
+@import "../Variable/fontfamily";
+@import "../mixinit/fontStyle";
+
+#footer {
+    padding: 40px 0;
+    background-color: #E2F4FF;
+    margin-top: 80px;
+
+    .f-t-top {
+        padding: 30px 60px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        form {
+            width: 350px;
+            position: relative;
+
+            input {
+                width: 100%;
+                line-height: 50px;
+                border: none;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                background-color: #EDA415;
+                padding: 0px 20px;
+                @include fontstyle($popins, 14px, 400, #ffffff);
+            }
+
+            button {
+                position: absolute;
+                right: 18px;
+                top: 12px;
+                background: transparent;
+                border: none;
+                color: #ffffff;
+            }
+        }
+
+        .col-part {
+            .col-text {
+                margin-left: 20px;
+
+                ul {
+                    li {
+                        @include fontstyle($popins, 14px, 600, #606060);
+                    }
+                }
+            }
+        }
+    }
+
+    .f-1 {
+        margin-top: 45px;
+
+        p {
+            margin-top: 40px;
+            @include fontstyle($popins, 16px, 400, #1B5A7D);
+        }
+        ul{
+            margin-top: 20px;
+            li{
+                margin-right: 25px;
+                a{
+                    i{
+                        color: #3B3B3B;
+                    }
+                }
+                font-size: 30px;
+            }
+        }
+    }
+    .f-2{
+         margin-top: 45px;
+         h5{
+            @include fontstyle($popins, 18px, 600, #1B5A7D);
+            margin-bottom: 20px;
+         }
+         ul{
+            list-style:circle;
+            li{
+                margin-bottom: 10px;
+                a{
+                    @include fontstyle($popins, 18px, 400, #1B5A7D);
+                }
+            }
+         }
+    }
+}

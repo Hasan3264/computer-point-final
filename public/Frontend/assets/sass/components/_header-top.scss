@@ -1,0 +1,527 @@
+@import "../basic/common";
+@import "../Variable/fontfamily";
+@import "../mixinit/fontStyle";
+
+.header {
+    .h-ptop {
+        line-height: 75px;
+
+        p {
+            @include fontstyle($popins, 14px, 400, #292D32);
+        }
+
+        ul {
+            li {
+                margin-left: 25px;
+
+                a {
+                    @include fontstyle($popins, 14px, 400, #292D32);
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-bottom {
+        line-height: 100px;
+        background-color: #003F62;
+
+        .form-controll {
+            position: relative;
+
+            input {
+                line-height: 50px;
+            }
+
+            input {
+                @include fontstyle($popins, 14px, 400, #292D32);
+                width: 100%;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border: none;
+            }
+
+            button {
+                @include fontstyle($popins, 14px, 400, #fff);
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                position: absolute;
+                right: 12px;
+                top: 26px;
+                width: 130px;
+                line-height: 36px;
+                background-color: #EDA415;
+            }
+        }
+
+        .h-b-l {
+            ul {
+                justify-content: end;
+
+                li {
+                    margin-left: 20px;
+
+                    a {
+                        display: flex;
+
+                        i {
+                            margin-right: 3px;
+                        }
+
+                        @include fontstyle($popins, 14px, 400, #fff);
+
+                        p {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            background-color: #EDA415;
+                            font-size: 8px;
+                            text-align: center;
+                            line-height: 15px;
+                            margin-top: 43px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .main_cart {
+                width: 350px;
+
+                .offcanvas-header {
+                    h5 {
+                        @include fontstyle($popins, 16px, 400, #003F62);
+                    }
+
+                    button {
+                        background: transparent;
+                        border: none;
+                        @include fontstyle($popins, 16px, 400, #003F62);
+                    }
+                }
+
+                .offcanvas-body {
+                    .cart_row {
+                        width: 100%;
+                        margin-bottom: 20px;
+
+                        .cart_text {
+                            width: 70%;
+                            padding: 20px;
+
+                            h5 {
+                                @include fontstyle($popins, 16px, 400, #292D32);
+                            }
+
+                            p {
+                                line-height: 20px;
+                                margin-top: 10px;
+                                @include fontstyle($popins, 16px, 500, #4d4e50);
+                            }
+                        }
+
+                        .cart_images {
+                            width: 30%;
+                            position: relative;
+
+                            i {
+                                cursor: pointer;
+                                right: 0;
+                                top: 0;
+                                position: absolute;
+                            }
+                        }
+                    }
+
+                    .cart_row_1 {
+                        line-height: 20px;
+
+                        .total {
+                            width: 40%;
+
+                            h5 {
+                                @include fontstyle($popins, 20px, 600, #4f768b);
+                            }
+                        }
+
+                        .total_price {
+                            width: 60%;
+                            text-align: end;
+                            padding-right: 20px;
+
+                            p {
+                                @include fontstyle($popins, 20px, 600, #4f768b);
+                            }
+                        }
+                    }
+
+                    .cart_button {
+                        padding: 0px 20px;
+
+                        a {
+
+                            border: 1px solid #003F62;
+                            padding: 10px 30px;
+                            @include fontstyle($popins, 16px, 500, #4d4e50);
+
+                            &:first-child {
+                                margin-right: 10px;
+                            }
+
+                            &:hover {
+                                background-color: #003F62;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.sign-in {
+
+    li.line {
+        @include fontstyle($popins, 14px, 400, #292D32);
+        line-height: 44px;
+        text-transform: capitalize;
+        padding: 0;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+
+        &:hover {
+            color: #1914fe;
+        }
+    }
+
+
+    li.sign {
+        margin-left: 20px;
+
+        i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    }
+
+
+
+    .form_body {
+        padding: 30px;
+        margin-top: 140px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #336699;
+            border-bottom: 3px solid #336699;
+            background-color: transparent;
+            text-transform: uppercase;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
+
+        ul {
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0px;
+                background: #eee;
+                width: 100%;
+                height: 3px;
+                z-index: -1;
+            }
+
+            li {
+                line-height: 30px;
+                button {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    display: block;
+                    width: 200px;
+                    color: #000;
+
+                    &:hover {
+                        color: #336699;
+                        border-bottom: 3px solid #336699;
+                        border-radius: 0;
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        -ms-border-radius: 0;
+                        -o-border-radius: 0;
+                    }
+                }
+            }
+        }
+
+        form {
+            .mb-3, .mb-4{
+                line-height: 40px
+            }
+            label {
+                @include fontstyle($popins, 14px, 400, #292D32);
+                line-height: 28px;
+            }
+
+            input {
+                border-radius: 0 !important;
+                -webkit-border-radius: 0 !important;
+                -moz-border-radius: 0 !important;
+                -ms-border-radius: 0 !important;
+                -o-border-radius: 0 !important;
+            }
+
+            .form-check-input:checked {
+                background-color: #000;
+
+            }
+
+            .form-check-input {
+                margin-top: 6px;
+            }
+
+            .form-check-input:focus {
+                box-shadow: 0 0 0 0;
+                border-color: #ccc;
+
+            }
+
+            .form-check a {
+                float: right;
+                color: #a94442;
+                transition: all linear .3s;
+                -webkit-transition: all linear .3s;
+                -moz-transition: all linear .3s;
+                -ms-transition: all linear .3s;
+                -o-transition: all linear .3s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            button {
+                display: block;
+                width: 100%;
+                @include fontstyle($popins, 14px, 400, #292D32);
+                text-transform: uppercase;
+                background: #336699;
+                border-color: #336699;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                transition: all linear .3s;
+                -webkit-transition: all linear .3s;
+                -moz-transition: all linear .3s;
+                -ms-transition: all linear .3s;
+                -o-transition: all linear .3s;
+
+                &:hover {
+                    background: #3c78b4;
+                    border-color: #3c78b4;
+                }
+            }
+
+            .para {
+                text-align: left;
+
+                span {
+                    @include fontstyle($popins, 14px, 400, #292D32);
+                    line-height: 24px;
+
+                    a {
+                        color: #336699;
+                        margin-left: 8px;
+                        transition: all linear .3s;
+                        -webkit-transition: all linear .3s;
+                        -moz-transition: all linear .3s;
+                        -ms-transition: all linear .3s;
+                        -o-transition: all linear .3s;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                a.link {
+                    margin-top: 20px;
+                    @include fontstyle($popins, 14px, 400, #292D32);
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+
+            .form-check {
+                label {
+                    a {
+                        color: #336699;
+                        margin-left: 7px;
+                    }
+                }
+            }
+
+        }
+
+        .social {
+            line-height: 40px;
+            p {
+                margin: 30px 0;
+                @include fontstyle($popins, 14px, 400, #292D32);
+                line-height: 28px;
+            }
+
+            a {
+             line-height: 40px;
+                i {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #3c78b4;
+                    border: 1px solid#3c78b4;
+                    margin: 0 5px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+                i.fa-facebook-f {
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+
+                    &:hover {
+                        color: #fff;
+                        background: #3c78b4;
+                    }
+                }
+
+
+                i.fa-twitter {
+                    color: #1da1f2;
+                    border-color: #1da1f2;
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+
+                    &:hover {
+
+                        color: #fff;
+                        background: #1da1f2;
+
+                    }
+                }
+
+                i.fa-google {
+                    color: #e34133;
+                    border-color: #e34133;
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+
+                    &:hover {
+                        color: #fff;
+                        background: #e34133;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+.manu_fix {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #000000;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.288);
+}
+
+
+
+.navbar {
+    padding: 0;
+    background-color: #F4F4F4;
+
+    .category-part {
+        line-height: 50px;
+        width: 200px;
+        padding: 0px 20px;
+        background-color: #EDA415;
+        cursor: pointer;
+
+        p {
+            @include fontstyle($popins, 14px, 400, #fff);
+
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .navbar-nav {
+        margin-left: 50px;
+
+        li {
+            margin-left: 20px;
+
+            a {
+                @include fontstyle($popins, 20px, 500, #3A3A3A);
+            }
+        }
+    }
+}

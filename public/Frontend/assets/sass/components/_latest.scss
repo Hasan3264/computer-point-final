@@ -1,0 +1,118 @@
+@import "../Variable/fontfamily";
+@import "../mixinit/fontStyle";
+
+#latest {
+    margin-top: 60px;
+
+    .header {
+        margin-bottom: 60px;
+
+        h5 {
+            @include fontstyle($popins, 26px, 600, #003F62);
+        }
+
+        a {
+            @include fontstyle($popins, 20px, 400, #003F62);
+        }
+    }
+
+    .content {
+        width: 100%;
+
+        .content-main {
+            width: 47.68%;
+            margin-right: 30px;
+            border: 1px solid #C8C8C8;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+            .img-part {
+                padding: 20px;
+                width: 50%;
+
+                img {
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+            }
+
+            .text-part {
+                padding: 20px;
+                width: 50%;
+
+                h5 {
+                    @include fontstyle($popins, 20px, 400, #003F62);
+                    border-radius: 30px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    -ms-border-radius: 30px;
+                    -o-border-radius: 30px;
+                    border: 1px solid #D4D4D4;
+                    display: inline;
+                    padding: 10px 10px;
+                }
+                h6{
+                    @include fontstyle($popins, 22px, 500, #003F62);
+                    margin-top: 20px;
+                }
+                p{
+                    margin-top: 10px;
+                     @include fontstyle($popins, 13px, 400, #003F62);
+                }
+                a{
+                     margin-top: 30px;
+                     @include fontstyle($popins, 13px, 500, #003F62);
+                }
+            }
+        }
+        position: relative;
+
+        .slick-dots {
+            display: flex !important;
+            position: absolute;
+            left: 50%;
+            bottom: -60px;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+
+            li {
+                button {
+                    font-size: 0;
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #ACACAC;
+                    background: transparent;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+                &.slick-active {
+                    button {
+                        background: #EDA415;
+                        width: 20px;
+                        height: 20px;
+                        border: 0;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import "../Variable/fontfamily";
+@import "../mixinit/fontStyle";
+
+#clints-review {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    .kjuh {
+        .cards {
+            margin-right: 30px;
+            width: 31%;
+            border: 1px solid #BABABA;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            padding: 15px;
+
+            .img-part {
+                img {
+                    width: 80px !important;
+                    height: 80px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+            }
+
+            .name-part {
+                margin-top: 25px;
+                margin-left: 30px;
+
+                p {
+                    @include fontstyle($popins, 15px, 500, #003F62);
+                }
+            }
+
+            .comments {
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #E2F4FF;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+
+                p {
+                    @include fontstyle($popins, 13px, 400, #003F62);
+                }
+            }
+        }
+        position: relative;
+
+        .slick-dots {
+            display: flex !important;
+            position: absolute;
+            left: 50%;
+            bottom: -60px;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+
+            li {
+                button {
+                    font-size: 0;
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #ACACAC;
+                    background: transparent;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+                &.slick-active {
+                    button {
+                        background: #EDA415;
+                        width: 20px;
+                        height: 20px;
+                        border: 0;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#logos{
+    margin-top: 60px;
+    .com-logo{
+        padding: 50px 0px;
+        background-color: #E2F4FF;
+        img{
+            margin-right: 50px;
+        }
+    }
+}

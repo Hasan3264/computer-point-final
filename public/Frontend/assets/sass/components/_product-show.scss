@@ -1,0 +1,159 @@
+@import "../Variable/fontfamily";
+@import "../mixinit/fontStyle";
+
+#product-show {
+    margin-top: 60px;
+
+    .p-s-c-1 {
+        border: 1px solid #ACACAC;
+        padding: 100px 20px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+        .p-s-c-1-c {
+            width: 100%;
+            display: flex;
+
+            .p-s-c-1-cimg {
+                width: 40%;
+            }
+
+            .p-s-c-1-cmain-content {
+                width: 55%;
+                margin-left: 20px;
+
+                h5 {
+                    @include fontstyle($popins, 21px, 600, #1B5A7D);
+                }
+
+                p {
+                    margin-top: 15px;
+                    @include fontstyle($popins, 17px, 600, #4A4A4A);
+                }
+
+                .review {
+                    margin-top: 15px;
+
+                    li {
+                        margin-right: 5px;
+
+                        i {
+                            font-size: 15px;
+                            color: #ACACAC;
+                        }
+                    }
+                }
+
+                .size {
+                    margin-top: 15px;
+
+                    li {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        text-align: center;
+                        line-height: 60px;
+                        margin-right: 5px;
+                        @include fontstyle($popins, 17px, 600, #EDA415);
+                        background-color: #E2F4FF;
+                    }
+                }
+
+                .cart {
+                    li {
+                        &:last-child {
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        position: relative;
+
+        .slick-dots {
+            display: flex !important;
+            position: absolute;
+            left: 50%;
+            bottom: 30px;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+
+            li {
+                button {
+                    font-size: 0;
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #ACACAC;
+                    background: transparent;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+                &.slick-active {
+                    button {
+                        background: #EDA415;
+                        width: 20px;
+                        height: 20px;
+                        border: 0;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .p-s-c-2 {
+        .p-s-c2-card {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ACACAC;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            .img-part{
+                padding: 20px;
+            }
+            .text-part{
+                padding-top: 25px;
+                padding-left: 25%;
+                 h5{
+                    @include fontstyle($popins, 17px, 500, #003F62);
+                }
+                p{
+                    margin-top: 10px;
+                     @include fontstyle($popins, 17px, 600, #4A4A4A);
+                }
+                .review{
+                    margin-top: 10px;
+                    color: #ACACAC;
+                    font-size: 10px;
+                    li{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}
